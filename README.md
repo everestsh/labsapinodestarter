@@ -1,11 +1,17 @@
 # Basic node API
 
+# Basic node API
+
 > **Disclaimer:** This application is currently in Alpha and is not ready for
 > production. Please use at your own risk as things will change almost daily.
 
 ## Requirements
 
 - [Labs Engineering Standard requirements found here](https://labs.lambdaschool.com/topics/node-js/)
+
+## API doc
+
+All routes can be viewed in the [DOCUMENTATION.md](DOCUMENTATION.md) file
 
 ## Getting Started
 
@@ -18,4 +24,7 @@
     > rm -rf ./NEW-REPO-NAME/.git```
 
 - run: `npm install` to download all dependencies.
+- run: `docker-compose up` to start up the postgresql database
+- run: `npm run knex -- migrate:latest` to create the starting schema
+- run: `npm run knex -- seed:run` to populate your db with some data
 - run: `npm start` to start your local development server.
